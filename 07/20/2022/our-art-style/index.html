@@ -1,0 +1,238 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="og:title" content="Pixel Art RPG" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://www.pixelartrpg.com" />
+		<meta property="og:image" content="https://pixelartrpg.com/card.png" />
+		<meta property="og:description" content="Pixel Art RPG: Secret of the Dreamers is a multiplayer RPG in development. It is being stylized in the Retro 16 Bit era of graphics." />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script async data-uid="a9a4702e27" src="https://fierce-motivator-2545.ck.page/a9a4702e27/index.js"></script>
+		<script
+		  src="https://code.jquery.com/jquery-3.6.0.min.js"
+		  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+		  crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/06f3c5cdb8.js" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function(e) {
+				height = "-=100px";
+				$("#animate").animate({
+				top: height,
+				opacity: '0.75',
+				right: '-=20px'
+			  }, 5000, function() {
+			  });
+			});
+			$(document).ready(function(e) {
+				$width = parseInt($("#mainPanel").css("width"),10) + 200;
+				$("#birds").animate({
+				right: '+=' & $width & 'px',
+				opacity: '0',
+				top: '+=250px'
+			  }, 15000, function() {
+			
+			  });
+			});
+		</script>
+		<style>
+			@font-face {
+				font-family: 'mana_seed_staticregular';
+				src: url('/font/mana_seed_static_0.1-webfont.woff2') format('woff2'),
+					 url('/font/mana_seed_static_0.1-webfont.woff') format('woff');
+				font-weight: normal;
+				font-style: normal;
+
+			}
+			@font-face {
+				font-family: 'silk';
+				src: url('/font/silkscreen_normal_macroman/slkscr-webfont.eot');
+				src: url('/font/silkscreen_normal_macroman/slkscr-webfont.eot?#iefix') format('embedded-opentype'),
+					 url('/font/silkscreen_normal_macroman/slkscr-webfont.woff2') format('woff2'),
+					 url('/font/silkscreen_normal_macroman/slkscr-webfont.woff') format('woff'),
+					 url('/font/silkscreen_normal_macroman/slkscr-webfont.ttf') format('truetype'),
+					 url('/font/silkscreen_normal_macroman/slkscr-webfont.svg#silkscreennormal') format('svg');
+				font-weight: normal;
+				font-style: normal;
+
+			}
+			.highlight pre
+			{
+				font-size: 15px;
+				font-family: Monospace;
+				background: rgba(0, 0, 0, .5) !important;
+				border:1px solid black;
+				padding:10px;
+			}
+			.article table
+			{
+				min-width: 100%;
+				border-top-width: 0px;
+				border-bottom-width: 1px;
+				border-color: rgb(186 230 253);
+				font-size:9px;
+			}
+			.article table thead
+			{
+				background-color: rgb(186 230 253);
+				padding:5px;
+				border:1px solid rgb(186 230 253);
+			}
+			.article table td
+			{
+				background-color: rgb(30 41 59);
+				color:white;
+				border:1px solid rgb(186 230 253);
+				padding:3px;
+			}
+			.article p
+			{
+				margin:15px !important;
+			}
+			.article ol li
+			{
+				list-style-type: decimal;
+				margin-left:50px;
+				font-size:10px;
+			}
+			.article ul li
+			{
+				list-style-type: square;
+				margin-left:50px;
+				font-size:10px;
+			}
+			.article h1
+			{
+				font-size:16px;
+				margin-top: 10px;
+			}
+			.article h2
+			{
+				font-size:14px;
+				margin-top: 10px;
+			}
+			.article h3
+			{
+				font-size:12px;
+				margin-top: 10px;
+			}
+			.article h4
+			{
+				font-size:10px;
+				margin-top: 10px;
+			}
+			.article h5
+			{
+				font-size:8px;
+				margin-top: 10px;
+			}
+			.article a
+			{
+				text-decoration: underline;
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body class="bg-gray-700 bg-cover bg-center px-8 bg-no-repeat" style="background-image: url('/images/background.png');">
+		<div id="mainPanel" class="flex flex-col mx-auto min-h-full" style="box-shadow: 0 0 50px #000; max-width:1200px">
+			<div class="w-full bg-black bg-center z-10" style="background-image: url('/images/logo_bg.png'); min-height:125px;">
+				<img id="animate" class="absolute top-24 ml-2 mt-2" style="height: 56px; width: 56px; z-index:-10; opacity: 0" src="/images/moon.png">
+				<img id="birds" class="absolute -mt-2" style="height: 100px; width: 100px; z-index:20;transform: scaleX(-1); opacity: 40%" src="/images/birds.gif">
+				<img class="h-20 mt-7 mx-auto z-20" src="/images/logo_text.png">
+			</div>
+			<div id="navbanner" class="banner bg-sky-700 text-white w-full border-t border-b border-black z-20">
+				<div class="pt-[5px] md:pt-[3px] w-full h-8 md:h-10 flex content-center">
+					<a href="/index.html" class="cursor-pointer hover:opacity-100 flex-1 opacity-50" style="font-family: 'silk', Arial, sans-serif;">
+						<div class="text-center text-[14px] md:text-[24px] whitespace-nowrap">Home</div>
+					</a>
+					<a href="/plans.html" class="cursor-pointer hover:opacity-100 flex-1 opacity-50" style="font-family: 'silk', Arial, sans-serif;">
+						<div class="text-center text-[14px] md:text-[24px] whitespace-nowrap">Plans</div>
+					</a>
+					<a href="/blog.html" class="cursor-pointer hover:opacity-100 flex-1 opacity-100" style="font-family: 'silk', Arial, sans-serif;">
+						<div class="text-center text-[14px] md:text-[24px] whitespace-nowrap"><span class="hidden lg:inline-block">Dev</span> Blog</div>
+					</a>
+					<a href="/photos.html" class="cursor-pointer hover:opacity-100 flex-1 opacity-50" style="font-family: 'silk', Arial, sans-serif;">
+						<div class="text-center text-[14px] md:text-[24px]">Photos</div>
+					</a>
+					<a href="/team.html" class="cursor-pointer hover:opacity-100 flex-1 opacity-50" style="font-family: 'silk', Arial, sans-serif;">
+						<div class="text-center text-[14px] md:text-[24px]"><span class="hidden lg:inline-block">Our</span> Team</div>
+					</a>
+				</div>
+			</div>
+			<div class="text-white w-full border-2 border-black p-3 text-[11px] flex-grow" style="background: rgba(0, 0, 0, .5);">
+				
+
+
+<div class="mt-12 max-w-7xl mx-auto z-10 px-4 sm:px-6 lg:px-8" style="font-family: 'mana_seed_staticregular', Arial, sans-serif;">
+	<p class="text-[12px] md:text-[20px] text-white">Our Art Style</p>
+	<h3 class="text-[8px] md:text-[13px] text-sky-600">
+		<time>07/20/2022</time>
+		<span> - Dagor</span>
+	</h3>
+	<div class="text-sky-200 text-[9px] article">
+		<br>
+One of the biggest things that held me back from finishing any of the many games I started in the past... was graphics. You really don't understand how much of a game is graphics when you first start. You think, I'll just put in some simple place holders and start coding up my game. Which works alright until you want your game to have any kind of flavor. It was often at this stage that I would go down the rabbit hole of trying to make my own art and getting discouraged and just giving up on the whole idea. It is because of these past failures that had me go down the path of looking for resources and skills outside of my own.
+<br><br>
+When I first started toying with the idea of making a game again, I already knew what I wanted! or so I thought. After playing so many many different indie games and having a blast, my mind kept jumping around from art style, game styles, directions... The question was, how did I want my story to be represented. What medium gave me the most direct path to telling a story and engaging my players.
+<br><br>
+After bouncing ideas around with my wife, I landed on top down SNES style art. Not only was it one of the easier styles to get into (or so my silly brain thought) but it did not call for any 3D modeling or programming a camera. I convinced the wife to start learning Pixel Art with me and we dove in feet first. Youtube tutorial after tutorial after tutorial, whats the best program, how should we approach it, color palletes...what? We need to pick colors. Wait, you color theory and shading... and its even harder because you only have a few hundred dots to work with! Why oh why is pixel art so complex. Its little cute sprites and tiles. Oh ho ho did we learn a lot. But, we weren't discourgaged. Larimaria set off to start working on mastering (ok getting basics down) pixel art and I set off to start building the fundamentals of the game. 
+<br><br>
+Then it hit me, ugh I am going to need some basic stuff to get me going. Which lead me to a wonderful site called itch.io. The mecha for indie game devs (imho). They had graphics, sounds, wallpapers, animations, etc. I just happened to have started looking around a summer sale! I quickly snatched up a few sprites and tile sets. I was so excited, not only did I have what I needed to start coding, but we also had examples for Larimaria to reference and learn from. We worked this way for a couple of weeks learning and building the game base. It was fantastic and motivating. But, as we implemented more features and coming up with more ideas for the game. We realized we would need more art to get going. The sprites I found were great, but didnt have animations in all directions, only to the left. This was because a lot of the pixel art artist are targeting RPG Maker, which is turn based combat. IE: player on the right, enemy on the left. 
+<br><br>
+I sent Larimaria down the path of learning to add more animation directions. But its far more complicated than you would think! Not only did I need her to design sprie animations, that could be layered with custom hair, eyes, mouths, headgear, armor, etc, etc, etc... I needed the animation to not be holding anything. I want to be able to overlay lots of different weapon arts and have a pixel art game where gear changes as you progress and upgrade. This added a whole other level of complexity. Understanding where items lay, how they shade, how the flow... or move rigid because they are metal. It was a very large task! It was this mountain that pushed me to digging deeper on Itch.io and seeing what I could find for reference for Larimaria to work from. 
+<br><br>
+Enter [Seliel The Shaper](https://seliel-the-shaper.itch.io/)! Their amazing Mana Seed collection was exactly the art style that Pixel Art RPG was heading toward. When Larimaria and I sat down to discuss how we wanted the game to look, we kept falling back to the greats of SNES. Chrono Trigger, Secret Of Mana, Illusion Of Gaia, Terranigma, Secret Of Evermore... I could go on and on. But I think you all get the idea. We wanted to relive the nostalgia of our childhoods all while putting our own spin. At first I was overjoyed to find the base sprite package from Seliel. It was exactly what we were needing for the animations. Layered sprites, animation in all directions, modeled in the art style of SoM and Chrono Trigger. I quickly put Larimaria to work creating some basic weapons and armor with animations. Her first outfit was a simple robe. It wasn't extrodinary but she was learning and progress was being made!
+<br><br>
+Here are two of the things Larimaria put together:
+<br><br>
+A bouncy slime (her first sprite and animation)
+<img src="/images/slime.gif" class="w-[64px]" />
+<br>
+A fire spell
+<img src="/images/castfire.gif" class="w-[64px]" />
+<br><br>
+The robes she is working on for the sprite:
+<img src="/images/aesprite.PNG" class="w-3/4" />
+	</div>
+	<div class="flex">
+		<div class="text-[8px] text-sky-200 bg-sky-900 w-fit p-2 m-1">
+			Pixel Art
+		</div>
+	</div>
+</div>
+
+
+			</div>
+			<footer class="bg-black w-full py-1">
+			  <div class="max-w-7xl mx-auto py-2 px-1 md:flex md:items-center md:justify-between md:pl-4">
+				<div class="flex justify-center space-x-8 md:space-x-4 md:order-2">
+				  <a href="https://www.facebook.com/pixelartrpg" class="text-gray-400 hover:text-gray-500">
+					<span class="sr-only">Facebook</span>
+					<img src="/images/facebook_pixel_logo.png" class="h-8 w-8 object-contain" />
+				  </a>
+
+				  <a href="https://www.instagram.com/pixelartrpgig/" class="text-gray-400 hover:text-gray-500">
+					<span class="sr-only">Instagram</span>
+					<img src="/images/instagram_pixel_logo.png" class="h-8 w-8 object-contain" />
+				  </a>
+
+				  <a href="https://twitter.com/pixelartrpg" class="text-gray-400 hover:text-gray-500">
+					<span class="sr-only">Twitter</span>
+					<img src="/images/twitter_pixel_logo.png" class="h-8 w-8 object-contain" />
+				  </a>
+
+				  <a href="https://github.com/pixelartrpg" class="text-gray-400 hover:text-gray-500">
+					<span class="sr-only">GitHub</span>
+					<img src="/images/github_pixel_logo.png" class="h-8 w-8 object-contain" />
+				  </a>
+				</div>
+				<div class="mt-2 md:mt-0 md:order-1">
+				  <p class="text-center text-[12px] text-gray-400" style="font-family: 'mana_seed_staticregular', Arial, sans-serif;">&copy; 2022 Pixel Art RPG</p>
+				</div>
+			  </div>
+			</footer>
+		</div>
+	</body>
+</html>
+
